@@ -1,6 +1,12 @@
 # Changes for DateTime::Format::IBeat
 
 ---
+version: 0.161
+date:    26 January 2004
+changes:
+    - Maintenance of module taken over by Earle Martin (EMARTIN).
+
+---
 version: 0.16
 date:    1 December 2003
 changes:

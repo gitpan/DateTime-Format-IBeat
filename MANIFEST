@@ -1,9 +1,6 @@
 Artistic
-AUTHORS
-ChangeLog
 Changes
 COPYING
-CREDITS
 INSTALL
 lib/DateTime/Format/IBeat.pm
 LICENCE
@@ -12,10 +9,8 @@ MANIFEST
 MANIFEST.SKIP
 META.yml
 README
-SIGNATURE
-t/00sig.t
+t/01format.t
+t/02parse.t
+t/03parsefull.t
+t/04badparse.t
 t/99pod.t
-t/badparse.t
-t/format.t
-t/parse.t
-t/parsefull.t

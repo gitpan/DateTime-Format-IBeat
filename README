@@ -4,15 +4,15 @@ DateTime::Format::IBeat
 
 For installation details, see INSTALL.
 
-For usage, see the doco. Either use perldoc or view it
-on the web at:
-    <http://search.cpan.org/dist/DateTime-Format-IBeat/>
+For usage, see the docs. Either use perldoc:
 
-Changes for 0.16 (1 December 2003)
-   - Better testing.
+    perldoc DateTime::Format::IBeat
 
+or view it on the web:
+
+    http://search.cpan.org/~emartin/DateTime-Format-IBeat/lib/DateTime/Format/IBeat.pm
 
 For a complete list of changes, see the Changes file.
 
-
-by Iain Truskett.
+Created by the late Iain Truskett (SPOON).
+Current maintainer: Earle Martin (EMARTIN).

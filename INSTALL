@@ -30,19 +30,14 @@ OBTAINING THE MODULE
 The latest release version of DateTime::Format::IBeat can be downloaded
 from any CPAN site:
 
-    http://www.cpan.org/modules/by-authors/id/S/SP/SPOON/
+    http://search.cpan.org/~emartin/DateTime-Format-IBeat/
     http://search.cpan.org/dist/DateTime-Format-IBeat/
-
-Interim and development versions may also be available
-from the author's web site:
-
-    http://dellah.org/perl/
 
 DateTime::Format::IBeat is distributed as a gzipped tar archive file:
 
     DateTime-Format-IBeat-<version>.tar.gz
 
-where <version> represents the current version number, e.g. 0.16.
+where <version> represents the current version number.
 
 To install the module, unpack the distribution archive to
 create an installation directory.  Something like this:
@@ -61,34 +56,18 @@ You can then 'cd' into the directory created,
 INSTALLING MANUALLY
 -------------------
 
-First, verify the package's integrity by ensuring you have
-Module::Signature installed, then type:
-
-    % cpansign -v
-
-That will check each file's integrity, as well as the signature's
-validity, thus verifying the integrity of the entire package.
-If "==> Signature verified OK! <==" is not displayed, the
-distribution may already have been compromised, and you should not run
-its Makefile.PL.
-
-Ideally, you should confirm with a third party that the finger print and
-key id by which the signature was signed is indeed the key it is meant
-to be (ideally you'll have an appropriate web of trust set up, but
-that's not always possible).
-
 The 'make install' (done later) will install the modules and scripts on
 your system. You may need administrator privileges to perform this task.
 Alternately you can install the module to a local directory (see
 ExtUtils::MakeMaker for full details), e.g.
 
-    % perl Makefile.PL PREFIX=/home/abw/
+    % perl Makefile.PL PREFIX=/home/fred
 
 Don't forget to update your PERL5LIB environment variable if you do
 this, or add a line to your script to tell Perl where to find the files,
 e.g.
 
-    use lib qw( /home/abw/lib/perl5/site_perl/5.6.0 );
+    use lib qw( /home/fred/lib/perl5/site_perl/5.6.0 );
 
 If you're not after a custom location, just do:
 
@@ -129,7 +108,5 @@ Or:
 That will tell both me and other potential users that the module
 built correctly on your machine.
 
-
-cheers,
-Iain (aka Spoon).
-http://iain.truskett.id.au/
+Thanks,
+Earle (current maintainer of this module).
