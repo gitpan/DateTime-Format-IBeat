@@ -7,7 +7,7 @@ license: perl
 name: DateTime-Format-IBeat
 recommends:
 requires:
-  DateTime: 0.08
+  DateTime: 0.09
   Carp: 1.01
-version: 0.14
+version: 0.15
 generated_by: docmaker version 0.89

@@ -3,7 +3,7 @@ WriteMakefile(
     NAME		=> 'DateTime::Format::IBeat',
     VERSION_FROM	=> 'lib/DateTime/Format/IBeat.pm',
     PREREQ_PM => {
-		'DateTime' => 0.08,
+		'DateTime' => 0.09,
 		'Carp' => 1.01,
 		'Test::More' => 0.47,
 	    },

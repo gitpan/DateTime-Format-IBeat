@@ -1,6 +1,12 @@
 # Changes for DateTime::Format::IBeat
 
 ---
+version: 0.15
+date:    2 April 2003
+changes:
+    - Fixed inaccurate dependency in Makefile.PL
+
+---
 version: 0.14
 date:    1 April 2003
 changes:
