@@ -1,6 +1,12 @@
 # Changes for DateTime::Format::IBeat
 
 ---
+version: 0.16
+date:    1 December 2003
+changes:
+    - Better testing.
+
+---
 version: 0.15
 date:    2 April 2003
 changes:

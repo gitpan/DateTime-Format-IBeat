@@ -1,13 +1,30 @@
 --- #YAML:1.0
+# http://module-build.sourceforge.net/META-spec.html
+distribution_type: module
+name: DateTime-Format-IBeat
+date: 1 December 2003
+author: SPOON
+version: 0.16
+license: perl
+
+conflicts: {}
+
 build_requires:
   Test::More: 0.47
-conflicts: {}
-distribution_type: module
-license: perl
-name: DateTime-Format-IBeat
 recommends:
+  Test::Pod: 1.02
+  Test::Signature: 1.05
 requires:
-  DateTime: 0.09
-  Carp: 1.01
-version: 0.15
-generated_by: docmaker version 0.89
+  DateTime: 0.18
+
+private:
+  directory:
+    - t
+
+provides:
+  DateTime::Format::IBeat:
+    file: lib/DateTime/Format/IBeat.pm
+    version: 0.16
+
+dynamic_config: 0
+generated_by: docmaker version 1.01

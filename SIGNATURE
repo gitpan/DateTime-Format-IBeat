@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.21.
+signed via the Module::Signature module, version 0.37.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -17,24 +17,27 @@ Hash: SHA1
 SHA1 93ae38916e0ce2026cece7675f8fd9394d3bf1b8 AUTHORS
 SHA1 7a95fc8778fbce1f60d222e0d0d1dbb6c649461f Artistic
 SHA1 531e6b5c470d4726483fd68833391653eace0a92 COPYING
-SHA1 0e9cc526cfea2f32b4d2b9a7ab4817a218398f09 CREDITS
-SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 ChangeLog
-SHA1 2bfb051612d9ca1f7c20f4246ff5edd9bc7ccb99 Changes
-SHA1 461c37249085586d7ea9ad3e71e4c4b184a27145 INSTALL
-SHA1 c4063a223029c85cc6e22afd42c2fcafcc9612a4 LICENSE
-SHA1 ae2f3aed6edf4bdfd006a91cfe55db2406a60a84 MANIFEST
-SHA1 a0523e378eb72ebcfdc133a5075a395807c0bd0e MANIFEST.SKIP
-SHA1 e885da7436eb1fff6c55c995e506226013015dae META.yml
-SHA1 29bdf160b41bf087a7fcf08c881c15a8d414b9e7 Makefile.PL
-SHA1 1bda26e49e99f400ea507a93721ad7abb2b759a0 README
-SHA1 a7f825a13107515ef913d6e0ce53d40f8d534321 lib/DateTime/Format/IBeat.pm
-SHA1 1a1596374b7a2a1698a4949f40179446922cc926 t/format.t
-SHA1 e44b6a2fddddf18c3f2cfceea68c72304673be18 t/parse.t
+SHA1 d165e282d9d4797eebb97f486d59b34d60a669ef CREDITS
+SHA1 f1ea73cf071a8bc3c921abcab9b279c841b7ad9d ChangeLog
+SHA1 bdc0951f84e041863d84741dcb10d11573379fa8 Changes
+SHA1 a1cfe745634fbf9183c3a4ab0a0a0dc91ff3c3b2 INSTALL
+SHA1 4323b25558d84b43471ce61a41ed586e9b5bbb60 LICENCE
+SHA1 61326440d0d5b69419d6c2f3297874a844bb7446 MANIFEST
+SHA1 3c06164fe683fac6e429c48445d9e05e76f617f4 MANIFEST.SKIP
+SHA1 e3f9a78953210baf439cb80ae40c59f5d557141d META.yml
+SHA1 5850d82293efdf5fa6377fec38bb0a558cdd680a Makefile.PL
+SHA1 2d6b76741e6d0ffe88c72850034024f01438a7a7 README
+SHA1 bcdc15016649438eab91c46b14f7dd51ce6d29ff lib/DateTime/Format/IBeat.pm
+SHA1 6a266926a5fbae4b8656b7bcc17019b8ebe9c2d2 t/00sig.t
+SHA1 c41574ca2c239b0c8dd9426018ee41eabb06e437 t/99pod.t
+SHA1 b27e56bbccb657a92dbec4ea49699337250fb179 t/badparse.t
+SHA1 86f8d3d9074fc883040f2b34bd552198dc047329 t/format.t
+SHA1 31b5fca59c503cfb9bace008c64171323a6d9883 t/parse.t
 SHA1 b0ab6314fce8a616d161dd1a55efff7c9f79befb t/parsefull.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.2.1 (GNU/Linux)
+Version: GnuPG v1.2.3 (GNU/Linux)
 
-iD8DBQE+iiL7zL8gm6KQWMgRAr+WAJ9/4T/dypDFGgLnxRjnasTv3kxxiwCgoxMy
-kkNHffokKXfn1uSPJbQvOsc=
-=b86K
+iD8DBQE/ywfgzL8gm6KQWMgRAmssAKCFpzdaSUnAE4COOe236lnAaXXrGACcDs0Y
+hMZ+1GX+feG+zS+fqY/ihsE=
+=o3nQ
 -----END PGP SIGNATURE-----

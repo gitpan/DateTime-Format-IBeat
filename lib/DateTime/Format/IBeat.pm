@@ -28,7 +28,7 @@ Swatch.
 Biel MeanTime (BMT) is the universal reference for Internet Time. A day
 in Internet Time begins at midnight BMT (@000 Swatch .beats) (Central
 European Wintertime). The meridian is marked for all to see on the
-façade of the Swatch International Headquarters on Jakob-Staempfli
+faÃ§ade of the Swatch International Headquarters on Jakob-Staempfli
 Street, Biel, Switzerland. So, it is the same time all over the world,
 be it night or day, the era of time zones has disappeared.
 
@@ -44,7 +44,7 @@ use strict;
 use warnings;
 use Carp qw( croak );
 use DateTime;
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 my $ratio   = 1000.0 / 86400.0;
 
@@ -69,7 +69,7 @@ accident.
 
 =cut
 
-my $_beat_convert = sub
+sub _beat_convert
 {
     my $beats = shift;
     my $dt = shift;
@@ -86,7 +86,7 @@ my $_beat_convert = sub
     return $dt->set_time_zone( 'UTC' );
 };
 
-my $_date_convert = sub
+sub _date_convert
 {
     my ($day, $month, $year) = @_;
     my $dt = DateTime->new(
@@ -102,17 +102,26 @@ my $_date_convert = sub
 my $beat_RE = qr/ @? (\d{1,3}) /x;
 my $date_RE = qr/ @? d? (\d\d) \. (\d\d) \. (\d\d) /x;
 
+sub _get_beats
+{
+    my ( $string ) = @_;
+    croak "Could not parse time!" unless defined $string
+        and $string =~ m/^ $beat_RE $/x;
+    return $1;
+};
+
+sub _get_days
+{
+    my ( $string ) = @_;
+    croak "Could not parse date!" unless defined $string
+        and $string =~ /^ $date_RE $/x;
+    return ( $1, $2, $3 );
+};
+
 sub parse_time
 {
-    my $class = shift;
-    my $string = shift;
-
-    my ($beats) = $string =~ m/^ $beat_RE $/x;
-
-    croak "Could not parse time!" unless defined $beats
-	and $beats < 1000 and $beats >= 0;
-
-    return $_beat_convert->( $beats );
+    my ( $class, $string ) = @_;
+    return _beat_convert( _get_beats( $string ) );
 }
 
 =head2 parse_date
@@ -132,13 +141,8 @@ accurate conversion to the usual notation, despite appearances.
 
 sub parse_date
 {
-    my $class = shift;
-    my $string = shift;
-    my ($day, $month, $year) = $string =~ /^ $date_RE $/x;
-    croak "Could not parse time!" unless defined $day and defined $month
-	and defined $year;
-
-    return $_date_convert->( $day, $month, $year );
+    my ( $class, $string ) = @_;
+    return _date_convert( _get_days( $string ) );
 }
 
 =head2 parse_datetime
@@ -154,13 +158,12 @@ that datetime.
 
 sub parse_datetime
 {
-    my $class = shift;
-    my $string = shift;
-    my ($day, $month, $year, $beats) = $string =~ /^ $date_RE \s+ $beat_RE $/x;
-    croak "Could not parse datetime!" unless defined $day
-	and defined $month and defined $year and defined $beats;
+    my ( $class, $string ) = @_;
+    croak "Could not parse datetime!" unless defined $string;
+    my ( $date, $time ) = split /\s+/, $string, 2;
 
-    return $_beat_convert->( $beats, $_date_convert->( $day, $month, $year ) );
+    return _beat_convert( _get_beats( $time ),
+        _date_convert( _get_days( $date ) ) );
 }
 
 
@@ -235,14 +238,14 @@ Alternatively, log them via the CPAN RT system via the web or email:
 This makes it much easier for me to track things and thus means
 your problem is less likely to be neglected.
 
-=head1 LICENSE AND COPYRIGHT
+=head1 LICENCE AND COPYRIGHT
 
 Copyright E<copy> Iain Truskett, 2003. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
-The full text of the licenses can be found in the F<Artistic> and
+The full text of the licences can be found in the F<Artistic> and
 F<COPYING> files included with this module.
 
 =head1 AUTHOR

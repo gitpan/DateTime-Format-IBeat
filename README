@@ -1,15 +1,16 @@
 DateTime::Format::IBeat
 
-   Format times in .beat notation
+    Format times in .beat notation
 
 For installation details, see INSTALL.
 
 For usage, see the doco. Either use perldoc or view it
 on the web at:
-    <http://search.cpan.org/author/SPOON/DateTime-Format-IBeat/>
+    <http://search.cpan.org/dist/DateTime-Format-IBeat/>
 
-Changes for 0.15 (2 April 2003)
-   - Fixed inaccurate dependency in Makefile.PL
+Changes for 0.16 (1 December 2003)
+   - Better testing.
+
 
 For a complete list of changes, see the Changes file.
 

@@ -1,4 +1,4 @@
-CREDITS FOR DateTime::Format::IBeat 0.15
+CREDITS FOR DateTime::Format::IBeat 0.16
 
 Dave Rolsky (DROLSKY) for kickstarting the DateTime project.
 
@@ -6,6 +6,4 @@ Swatch, for coming up with this mad format.
 
 Jerub, from opn, who wrote the python original, from which I
 retain no code. D'oh.
-
-
 

@@ -1,4 +1,4 @@
-# $Id$
+# $Id: format.t,v 1.1 2003/04/04 03:31:58 koschei Exp $
 use Test::More tests => 7;
 use strict;
 use warnings;
